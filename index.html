@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demo</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <!-- external stylesheet  -->
+    <link rel="stylesheet" href="css/help.css">
+    <!-- favicon icon -->
+    <link rel="icon" href="images/favicon-icon.png" type="image/gif" sizes="16x16">
+    <!-- google font  -->
+    <link href="https://fonts.googleapis.com/css2?family=Commissioner:wght@300&display=swap" rel="stylesheet">
+    <!-- fa fa icon  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <header>
+    <!-- main header -->
+    <div class="m-bg">
+        <span>Administration</span>
+        <span>Manage This page</span>
+    </div>
+    <div class="m1-bg">
+        <div class="container country-code">
+           <div>
+            <select class="country" id='cboSelect'>
+                <option value="EN">EN</option>
+                <option value="AD">Andorra</option>
+                <option value="AO">Angola</option>
+                <option value="AI">Anguilla</option>
+                <option value="AQ">Antarctica</option>
+    
+            </select>
+            <select  id='cuSelect' class="currency">
+                <option value="USD" selected="selected">USD</option>
+                <option value="EUR">Euro</option>
+                <option value="GBP">United Kingdom Pounds</option>
+                <option value="DZD">Algeria Dinars</option>
+                <option value="ARP">Argentina Pesos</option>
+            </select>
+           </div>
+           <div>
+               <span><a href="#">MyAccount</a></span>
+               <span>Logout</span>
+           </div>
+        </div>
+    </div>
+    <div class="container logo-part">
+        <img src="images/logo.png" class="img-responsive" height="60px" width="180px">
+        <div class="search">
+            <input type="text" class="searchTerm" placeholder="search for product....">
+            <button type="submit" class="searchButton">
+              <i class="fa fa-search"></i>
+           </button>
+         </div> <!--end search bar-->
+         <div class="icon">
+            <i class="fa fa-envelope-o" aria-hidden="true"></i>
+            <i class="fa fa-random" aria-hidden="true"></i>
+           <a href="#"> <i class="fa fa-heart-o" aria-hidden="true"></i></a>
+            <i class="fa fa-shopping-bag" aria-hidden="true"></i>    
+         </div>
+    </div>
+    <!-- end main header  -->
+</header>
+    <!-- navigation bar  -->
+    <div class="container" align="center">
+        <div class="row">
+            <div class="col-md-2">
+                <div class="dropdown">
+                    <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+                      Shop By Category
+                    </button>
+                    <div class="dropdown-menu">
+                      <a class="dropdown-item" href="#">MAN</a>
+                      <a class="dropdown-item" href="#">WOMAN</a>
+                      <a class="dropdown-item" href="#">CHILD</a>
+                    </div>
+                  </div>
+            </div>
+            <div class="col-md-10">
+                <nav class="navbar navbar-expand-md ">
+                    <a class="navbar-brand" href="#" ></a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                      <span><i class="fa fa-bars" aria-hidden="true"></i></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                      <ul class="navbar-nav">
+                        <li class="nav-item ">
+                            <a class="nav-link active" href="#">HOME</a>
+                          </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="#">ABOUT US</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="#">BRANDS</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link deals" href="#">TODAY'S DEALS</a>
+                        </li> 
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">NEW ARRIVALS</a>
+                          </li> 
+                          <li class="nav-item">
+                            <a class="nav-link" href="#">CONTACT US</a>
+                          </li>    
+                      </ul>
+                    </div>  
+                  </nav>
+            </div>
+        </div>
+    </div>
+    <!-- end navigation  -->
+    <!-- main slider  -->
+    <div id="demo" class="carousel slide" data-ride="carousel">
+
+        <!-- Indicators -->
+        <ul class="carousel-indicators">
+          <li data-target="#demo" data-slide-to="0" class="active"></li>
+          <li data-target="#demo" data-slide-to="1"></li>
+          <li data-target="#demo" data-slide-to="2"></li>
+          <li data-target="#demo" data-slide-to="3"></li>
+        </ul>
+        
+        <!-- The slideshow -->
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="images/01.jpg" alt="Los Angeles" width="1100" height="500">
+          </div>
+          <div class="carousel-item">
+            <img src="images/02.jpg" alt="Chicago" width="1100" height="500">
+          </div>
+          <div class="carousel-item">
+            <img src="images/03.jpg" alt="New York" width="1100" height="500">
+          </div>
+          <div class="carousel-item">
+            <img src="images/04.png" alt="New York" width="1100" height="500">
+          </div>
+        </div>
+        
+        <!-- Left and right controls -->
+        <!-- <a class="carousel-control-prev" href="#demo" data-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+        </a>
+        <a class="carousel-control-next" href="#demo" data-slide="next">
+          <span class="carousel-control-next-icon"></span>
+        </a> -->
+      </div>
+    <!-- end main slider  -->
+    <!-- gallary  -->
+      <div class="container">
+        <div class="row"> 
+            <div class="column">
+                <span class="lable">SOFA</span>   
+                <img src="images/f1.jpg" style="width:100%">
+                <span class="lable">HALL</span>
+                <img src="images/f2.jpg" style="width:100%">
+            </div>
+            
+            <div class="column"> 
+                <span class="lable">LIGHT & TABLE</span>
+              <img src="images/f3.jfif" style="width:100%" height="440px">
+            </div> 
+             
+            <div class="column">
+                <span class="lable">TV TABLE</span>
+                <img src="images/f4.jpg" style="width:100%">
+                <span class="lable">WINDOW</span>
+                <img src="images/f5.jpg" style="width:100%">
+                
+            </div>
+            
+            <div class="column">
+                <span class="lable">CHIR</span>
+                <img src="images/f6.jpg" style="width:100%">
+                <span class="lable">KICHEN</span>
+                <img src="images/f7.jpg" style="width:100%">
+            </div>
+            
+          </div>
+      </div>
+      <br><br><br><br><br><br>
+      <!-- end gallary  -->
+      <!-- footer  -->
+        <footer>
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-6">
+                        <section class="customer-logos slider">
+                            <div class="slide"><img src="https://image.freepik.com/free-vector/luxury-letter-e-logo-design_1017-8903.jpg"></div>
+                            <div class="slide"><img src="http://www.webcoderskull.com/img/logo.png"></div>
+                            <div class="slide"><img src="https://image.freepik.com/free-vector/3d-box-logo_1103-876.jpg"></div>
+                            <div class="slide"><img src="https://image.freepik.com/free-vector/blue-tech-logo_1103-822.jpg"></div>
+                            <div class="slide"><img src="https://image.freepik.com/free-vector/colors-curl-logo-template_23-2147536125.jpg"></div>
+                            <div class="slide"><img src="https://image.freepik.com/free-vector/abstract-cross-logo_23-2147536124.jpg"></div>
+                            <div class="slide"><img src="https://image.freepik.com/free-vector/football-logo-background_1195-244.jpg"></div>
+                            <div class="slide"><img src="https://image.freepik.com/free-vector/background-of-spots-halftone_1035-3847.jpg"></div>
+                            <div class="slide"><img src="https://image.freepik.com/free-vector/retro-label-on-rustic-background_82147503374.jpg"></div>
+                         </section>
+                    </div>
+                    <diiv class="col-md-6">
+                        <h4>SUBSCRIBE TO OUR NEWSLETTER</h4>
+                        <form class="example">
+                            <input type="text" class="footer-serch" placeholder="Search.." name="search2">
+                          </form>
+                    </diiv>
+                </div>
+                <hr>
+                <div class="row">
+                    <div class="col-md-3">
+                        <img src="images/logo.png" height="60px" width="120px" class="img-responsive">
+                        <p>Demo for accessible-slick, a fully accessible drop-in replacement for Slick Slider. Learn more at: In this demo, a set </p> 
+                        <span class="social-icon"><i class="fa fa-facebook" aria-hidden="true"></i></span>
+                        <span class="social-icon"><i class="fa fa-twitter" aria-hidden="true"></i></span>
+                        <span class="social-icon"><i class="fa fa-instagram" aria-hidden="true"></i></span>
+                        <span class="social-icon"><i class="fa fa-whatsapp" aria-hidden="true"></i></span>
+                    </div>
+                    <div class="col-md-2">
+                        <h5>INFORMATION</h5>
+                        <ul>
+                            <li>Sitemap</li>
+                            <li>Shiping&return</li>
+                            <li>Pravacy Notice</li>
+                            <li>Condition of use</li>
+                            <li>aboutus</li>
+                            <li>Cotact us</li>
+                        </ul>
+                    </div>
+                    <div class="col-md-2">
+                        <h5>COUSTMNER</h5>
+                        <ul>
+                            <li>Search</li>
+                            <li>News</li>
+                            <li>Blog</li>
+                            <li>Recently Views </li>
+                            <li>Compare product</li>
+                            <li>New products</li>
+                        </ul>
+                    </div>
+                    <div class="col-md-2">
+                        <h5>MY ACCOUNT</h5>
+                        <ul>
+                            <li>My acoount</li>
+                            <li>Order</li>
+                            <li>Address</li>
+                            <li>Shoping cart</li>
+                            <li>Wishlist</li>
+                            <li>Account</li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3">
+                        <h5>Store Info</h5>
+                        <span><i class="fa fa-map-marker" aria-hidden="true"></i>  125,126 Mansarover Shoping center , sayan road amroli syrat -394107</span>
+                        <br>
+                        <span><i class="fa fa-phone" aria-hidden="true"></i> + 91 8000880888</span>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <div class="payment">
+            <div>
+                <img src="images/visa.png" class="img-responsive" height="30px" width="50px">
+                <img src="images/masterCard.png" class="img-responsive" height="30px" width="50px">
+                <img src="images/paypal.png" class="img-responsive" height="30px" width="80px">
+            </div>
+            <p>@2020 All Right Reserved.</p>
+        </div>
+</body>
+
+<script>
+    $("#cboSelect").change(function(){    
+ $("#cboSelect option:selected").text($("#cboSelect").val());
+  });
+</script>
+<script>
+  $("#cuSelect").change(function(){    
+$("#cuSelect option:selected").text($("#cuSelect").val());
+});
+</script>
+<!-- footer slider  -->
+<script>
+  $(document).ready(function(){
+    $('.customer-logos').slick({
+        slidesToShow: 6,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 1500,
+        arrows: false,
+        dots: false,
+        pauseOnHover: false,
+        responsive: [{
+            breakpoint: 768,
+            settings: {
+                slidesToShow: 4
+            }
+        }, {
+            breakpoint: 520,
+            settings: {
+                slidesToShow: 3
+            }
+        }]
+    });
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script>
+</html>
